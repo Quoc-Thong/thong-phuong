@@ -43,13 +43,13 @@ const Event = () => {
       >
         <div className={styles["event-wrapper"]}>
           <div className={styles["frame-img"]}>
-            <Image
+            {/* <Image
               // src={"/event/hinh-cong.JPG"}
               width={300}
               height={300}
               alt="hinh-cong"
               loading="lazy"
-            />
+            /> */}
           </div>
           <div className={classNames([styles["event-section"]])}>
             <p className={styles["section-title"]}>Lễ cưới tại nhà thờ</p>
@@ -87,13 +87,13 @@ const Event = () => {
           ])}
         >
           <div className={styles["frame-img"]}>
-            <Image
+            {/* <Image
               // src={"/event/cuoi-nha-gai.jpg"}
               width={300}
               height={300}
               alt="hinh-cong"
               loading="lazy"
-            />
+            /> */}
           </div>
           <div className={classNames([styles["event-section"]])}>
             <p className={styles["section-title"]}>Lễ cưới tại nhà gái</p>
@@ -127,13 +127,13 @@ const Event = () => {
       >
         <div className={styles["event-wrapper"]}>
           <div className={styles["frame-img"]}>
-            <Image
+            {/* <Image
               // src={"/event/cuoi-nha-trai.jpg"}
               width={300}
               height={300}
               alt="hinh-cong"
               loading="lazy"
-            />
+            /> */}
           </div>
           <div className={classNames([styles["event-section"]])}>
             <p className={styles["section-title"]}>Lễ cưới tại nhà trai</p>
