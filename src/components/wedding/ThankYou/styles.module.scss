@@ -1,0 +1,26 @@
+.img-wrapper {
+  width: 100%;
+  img {
+    width: 100% !important;
+  }
+  :global {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.thank-you-text {
+  font-family: var(--graphitel-font);
+  font-size: 32px;
+}
+
+.timer {
+  font-family: var(--spencerio-font);
+  margin-top: 18px;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}

@@ -1,0 +1,15 @@
+.hover-img {
+  height: 100%;
+  background-color: pink;
+  opacity: 0.5;
+}
+
+.custom-list-img {
+  margin: 0 auto;
+
+  :global {
+    img {
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.notice {
+  font-family: var(--dancing-font);
+  font-size: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 52px;
+  }
+}
+
+.announcement-bg {
+  margin-bottom: 52px;
+  color: #3d155f;
+}
+
+.section-people {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 12px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.announcement-title {
+  font-family: var(--roboto-slab-font);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 52px;
+  padding: 12px;
+  max-width: 700px;
+}
+
+.frame-img {
+  //   clip-path: path(var(--circle));
+  clip-path: path(var(--flower));
+}
+
+.bridegroom {
+  font-family: var(--belleza-font);
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  //   margin: 12px;
+}
+
+.sign {
+  font-family: var(--graphitel-font);
+  font-size: 40px;
+  padding: 24px 0;
+}
+.quote {
+  margin: 12px;
+  max-width: 300px;
+  font-family: var(--belleza-font);
+  font-size: 18px;
+  text-align: center;
+}

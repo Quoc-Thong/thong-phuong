@@ -1,0 +1,126 @@
+.travel-location {
+    color: #3D155F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+ 
+}
+
+.love-story-container {
+    color: #3D155F;
+     width: 100%;
+     padding: 40px 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.love-story__stories {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+    padding: 10px
+}
+
+.love-story__title {
+    text-align: left;
+    font-family: var(--dancing-font);
+    font-size: 28px;
+
+    @media screen and (min-width: 768px){
+        text-align: center;
+    }
+}
+
+.love-story__description {
+    font-family: var(--roboto-slab-font);
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    padding: 24px;
+    :global {
+        span {
+            color: rgba(253, 22, 203, 0.624);
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+}
+
+.time {
+    font-family: var(--spencerio-font);
+    font-size: 28px;
+}
+
+.love-story__title {
+ font-family: var(--dancing-font);
+ text-align: center; 
+ @media screen and (min-width: 768px) {
+    text-align: unset; 
+}
+}
+
+
+.stories__wrapper {
+    background-color: #F5DCE0;
+    border-radius: 8px;
+    color: black;
+    padding: 12px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.frame-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    :global {
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.stories__wrapper__revert {
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+    }
+}
+.text-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+text-align: left;
+    }
+}
+
+.text-desc__revert {
+    @media screen and (min-width: 768px) {
+text-align: right!important;
+    }
+}
+
+.end {
+    text-align: center;
+    font-size: 42px;
+    font-family:var(--pasternak-font)
+}

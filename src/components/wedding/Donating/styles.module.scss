@@ -1,0 +1,74 @@
+.event-heading {
+    font-family: var(--dancing-font);
+    font-size: 44px;
+    // color: rgb(157, 44, 63);
+}
+
+.card-donating {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 12px;
+    color: black;
+    padding: 12px;
+    align-items: center;
+    z-index: 10;
+   background-color: #F5DCE0;
+   
+   
+   box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  //  margin: 8px;
+}
+
+.donating-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:18px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 140%;
+    background-color: #ea43d1;
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    animation: animate 12s linear infinite;
+  }
+  
+  .box::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+  }
+  
+  @keyframes animate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
