@@ -13,8 +13,7 @@ const WeddingImages = () => {
   const nextImage = images[nextIndex] || currentImage;
   const prevIndex = (index + images.length - 1) % images.length;
   const prevImage = images[prevIndex] || currentImage;
-  //  _item: CustomImage
-  const handleClick = (index: number) => setIndex(index);
+  const handleClick = (index: number, item?: CustomImage) => setIndex(index);
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
@@ -46,6 +45,7 @@ const WeddingImages = () => {
               height={320}
               width={200}
               onClick={() => handleClick(index)}
+              loading="lazy"
             />
           ))}
         </div>

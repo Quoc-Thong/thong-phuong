@@ -79,15 +79,15 @@ export const images: CustomImage[] = [
       <div className={classNames(["h-full", styles["hover-img"]])}></div>
     ),
   },
-  // {
-  //   src: "/wedding-picture/DSC00530 re.jpg",
-  //   original: "/wedding-picture/DSC00530 re.jpg",
-  //   width: 320,
-  //   height: 200,
-  //   customOverlay: (
-  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
-  //   ),
-  // },
+  {
+    src: "/wedding-picture/DSC00530 re.jpg",
+    original: "/wedding-picture/DSC00530 re.jpg",
+    width: 320,
+    height: 200,
+    customOverlay: (
+      <div className={classNames(["h-full", styles["hover-img"]])}></div>
+    ),
+  },
   {
     src: "/wedding-picture/DSC00693 re.jpg",
     original: "/wedding-picture/DSC00693 re.jpg",
@@ -124,7 +124,7 @@ export const images: CustomImage[] = [
       <div className={classNames(["h-full", styles["hover-img"]])}></div>
     ),
   },
-  // TODO:
+
   {
     src: "/wedding-picture/DSC09830 re.jpg",
     original: "/wedding-picture/DSC09830 re.jpg",
@@ -170,7 +170,6 @@ export const images: CustomImage[] = [
       <div className={classNames(["h-full", styles["hover-img"]])}></div>
     ),
   },
-  //
 
   {
     src: "/wedding-picture/DSC00022.jpg",

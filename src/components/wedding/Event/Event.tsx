@@ -43,13 +43,13 @@ const Event = () => {
       >
         <div className={styles["event-wrapper"]}>
           <div className={styles["frame-img"]}>
-            {/* <Image
-              // src={"/event/hinh-cong.JPG"}
+            <Image
+              src={"/event/church.jpg"}
               width={300}
               height={300}
-              alt="hinh-cong"
+              alt="hinh-nha-tho"
               loading="lazy"
-            /> */}
+            />
           </div>
           <div className={classNames([styles["event-section"]])}>
             <p className={styles["section-title"]}>Lễ cưới tại nhà thờ</p>

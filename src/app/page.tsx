@@ -67,10 +67,11 @@ export default function Home() {
         <Donating />
         <ThankYou />
         <HeartFallDown />
+        {/*  */}
         {/* <MoreInfo /> */}
         {/* <TravelLocation /> */}
 
-        <Audio />
+        {/* <Audio /> */}
       </MotionConfig>
     </div>
   );
