@@ -81,7 +81,6 @@ const Announcement = () => {
             </div>
           </motion.div>
           <HeartAnimation />
-          {/* end re */}
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, x: 200 }}
