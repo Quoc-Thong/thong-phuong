@@ -55,13 +55,13 @@ const Event = () => {
             <p className={styles["section-title"]}>Lễ cưới tại nhà thờ</p>
             <div className={styles["date-time"]}>
               <FontAwesomeIcon icon={faCalendar} className="pr-2" />
-              <span>05-01-2024</span>,{" "}
+              <span>2-11-2024</span>,{" "}
               <FontAwesomeIcon icon={faClock} className="pr-2" />
-              05:00 p.m. - 07:00 p.m.
+              10:00 a.m. - 10:30 a.m.
             </div>
             <Link
               target="_blank"
-              href={"https://maps.app.goo.gl/GBCh9adSQwL2bGS8A"}
+              href={"https://maps.app.goo.gl/d5jsfNEzAHBrHA6q8"}
               className={styles["link-highlight"]}
             >
               <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
@@ -99,18 +99,18 @@ const Event = () => {
             <p className={styles["section-title"]}>Lễ cưới tại nhà gái</p>
             <div className={styles["date-time"]}>
               <FontAwesomeIcon icon={faCalendar} className="pr-2" />
-              <span>06-01-2024</span>,{" "}
+              <span>13-10-2024</span>,{" "}
               <FontAwesomeIcon icon={faClock} className="pr-2" />
-              09:00 a.m. - 01:00 p.m.
+              09:00 a.m. - 10:00 a.m.
             </div>
 
             <Link
               target="_blank"
-              href={"https://maps.app.goo.gl/GBCh9adSQwL2bGS8A"}
+              href={"https://maps.app.goo.gl/piFhtoFcVXhUhMzi7"}
               className={styles["link-highlight"]}
             >
               <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
-              Nhà gái, 86 Thôn 4, Hoà Khánh, Buôn Ma Thuột
+              Nhà gái, 221 Điện Biên Phủ, Thanh Khê, Đà Nẵng
             </Link>
           </div>
         </div>
@@ -139,18 +139,18 @@ const Event = () => {
             <p className={styles["section-title"]}>Lễ cưới tại nhà trai</p>
             <div className={styles["date-time"]}>
               <FontAwesomeIcon icon={faCalendar} className="pr-2" />
-              <span>07-01-2024</span>,{" "}
+              <span>03-11-2024</span>,{" "}
               <FontAwesomeIcon icon={faClock} className="pr-2" />
-              09:00 a.m. - 01:00 p.m.
+              08:00 a.m. - 09:00 a.m.
             </div>
 
             <Link
               target="_blank"
-              href={"https://maps.app.goo.gl/FHEPZWrmJaixjpxL7"}
+              href={"https://maps.app.goo.gl/fJkVFHV7ZrceZa9d6"}
               className={styles["link-highlight"]}
             >
               <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
-              Nhà trai, 133 Thôn 7, Hoà Khánh, Buôn Ma Thuột
+              Nhà trai, 5/6B Lô Tư, Bình Tân, Hồ Chí Mình
             </Link>
           </div>
         </div>

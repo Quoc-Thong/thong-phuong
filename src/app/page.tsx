@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </h3>
         </motion.div>
-        <div className="p-4 w-[1000px] mx-auto">
+        <div className="p-4 mx-auto">
           <Tabs
             centered
             items={[
@@ -69,6 +69,7 @@ export default function Home() {
         <HeartFallDown />
         {/* <MoreInfo /> */}
         {/* <TravelLocation /> */}
+
         <Audio />
       </MotionConfig>
     </div>

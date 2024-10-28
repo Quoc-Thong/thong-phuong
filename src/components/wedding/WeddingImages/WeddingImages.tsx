@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import { images, CustomImage } from "./images";
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const WeddingImages = () => {
   const [index, setIndex] = useState(-1);
 
@@ -13,8 +13,8 @@ const WeddingImages = () => {
   const nextImage = images[nextIndex] || currentImage;
   const prevIndex = (index + images.length - 1) % images.length;
   const prevImage = images[prevIndex] || currentImage;
-
-  const handleClick = (index: number, item: CustomImage) => setIndex(index);
+  //  _item: CustomImage
+  const handleClick = (index: number) => setIndex(index);
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
@@ -30,11 +30,26 @@ const WeddingImages = () => {
           duration: 2,
         }}
       >
-        <Gallery
+        {/* <Gallery
           images={images}
           onClick={handleClick}
           enableImageSelection={false}
-        />
+        /> */}
+
+        {/*TODO: test */}
+        <div className="flex gap-4 flex-wrap cursor-pointer">
+          {images.map((src, index) => (
+            <Image
+              key={index}
+              alt={`Image ${index + 1}`}
+              src={src.src}
+              height={320}
+              width={200}
+              onClick={() => handleClick(index)}
+            />
+          ))}
+        </div>
+
         {!!currentImage && (
           /* @ts-ignore */
           <Lightbox

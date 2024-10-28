@@ -27,32 +27,32 @@ const Donating = () => {
           <div className="">
             <div className={styles["card-donating"]}>
               <p>Mừng cưới đến chú rể</p>
-              {/* <Image
-                src="/donating/KHANH-QR.png"
+              <Image
+                src="/donating/qr-chu-re-done.png"
                 width={150}
                 height={150}
                 alt="qr-code"
                 priority
-              /> */}
+              />
               <p>HUYNH DOAN QUOC THONG</p>
               <p style={{ maxWidth: 200, textAlign: "center" }}>
-                Ứng dụng ngân hàng Techcombank
+                Ứng dụng ngân hàng Techcombank, VietQR, napas247
               </p>
             </div>
           </div>
           <div className="">
             <div className={styles["card-donating"]}>
               <p>Mừng cưới đến cô dâu</p>
-              {/* <Image
-                src="/donating/THUY-QR.png"
+              <Image
+                src="/donating/qr-co-dau-done.png"
                 width={150}
                 height={150}
                 alt="qr-code"
                 priority
-              /> */}
+              />
               <p>HUYNH THI KIM PHUONG</p>
               <p style={{ maxWidth: 200, textAlign: "center" }}>
-                Ứng dụng ngân hàng Techcombank
+                Ứng dụng ngân hàng Techcombank, VietQR, napas247
               </p>
             </div>
           </div>
