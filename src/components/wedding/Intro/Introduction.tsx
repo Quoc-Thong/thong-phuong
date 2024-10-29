@@ -3,18 +3,48 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import { FlyHeart } from "@/icons/flyHeart";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
 
 const Introduction = () => {
+  const [isMaxWidth480, setIsMaxWidth480] = useState<boolean>();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMaxWidth480(window.innerWidth <= 480);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div style={{ height: "100vh", position: "relative" }}>
-      <Image
-        priority
-        alt="bg-wedding"
-        src={"/out-side.jpg"}
-        width={2600}
-        height={2600}
-        className={classNames([styles["splash-background"]])}
-      />
+      {isMaxWidth480 ? (
+        <Image
+          priority
+          alt="bg-wedding"
+          src={"/out-side-mobile.jpg"}
+          width={360}
+          height={360}
+          className={classNames([styles["splash-background"]])}
+        />
+      ) : (
+        <Image
+          priority
+          alt="bg-wedding"
+          src={"/out-side.jpg"}
+          width={2600}
+          height={2600}
+          className={classNames([styles["splash-background"]])}
+        />
+      )}
+
       <div
         className="absolute w-full flex justify-start h-full items-center"
         style={{ height: "100vh" }}

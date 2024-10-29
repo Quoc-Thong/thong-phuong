@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div
       className={classNames([
-        "w-full h-full overflow-auto",
+        "h-full w-full overflow-auto",
         styles["home-page"],
       ])}
     >

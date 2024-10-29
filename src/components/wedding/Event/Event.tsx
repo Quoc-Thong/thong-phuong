@@ -91,7 +91,7 @@ const Event = () => {
               src={"/event/gia-tien-nha-gai.jpg"}
               width={300}
               height={300}
-              alt="hinh-cong"
+              alt="gia-tien-nha-gai"
               loading="lazy"
             />
           </div>
@@ -151,6 +151,51 @@ const Event = () => {
             >
               <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
               Nhà trai, 5/6B Lô Tư, Bình Tân, Hồ Chí Mình
+            </Link>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          type: "spring",
+          duration: 2,
+        }}
+      >
+        <div
+          className={classNames([
+            styles["event-wrapper"],
+            styles["revert-wrapper"],
+          ])}
+        >
+          <div className={styles["frame-img"]}>
+            <Image
+              src={"/event/nha-hang.jpg"}
+              width={300}
+              height={300}
+              alt="hinh-cong"
+              loading="lazy"
+            />
+          </div>
+          <div className={classNames([styles["event-section"]])}>
+            <p className={styles["section-title"]}>Lễ cưới tại nhà hàng</p>
+            <div className={styles["date-time"]}>
+              <FontAwesomeIcon icon={faCalendar} className="pr-2" />
+              <span>03-11-2024</span>,{" "}
+              <FontAwesomeIcon icon={faClock} className="pr-2" />
+              11:00 - 14:30
+            </div>
+
+            <Link
+              target="_blank"
+              href={"https://maps.app.goo.gl/z4zE44jmxtJw1VsaA"}
+              className={styles["link-highlight"]}
+            >
+              <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
+              107 Đ. Tân Thắng, Sơn Kỳ, Tân Phú, Hồ Chí Minh
             </Link>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import { images, CustomImage } from "./images";
 import styles from "./styles.module.scss";
@@ -29,21 +28,14 @@ const WeddingImages = () => {
           duration: 2,
         }}
       >
-        {/* <Gallery
-          images={images}
-          onClick={handleClick}
-          enableImageSelection={false}
-        /> */}
-
-        {/*TODO: test */}
-        <div className="flex gap-4 flex-wrap cursor-pointer">
+        <div className="flex gap-4 flex-wrap justify-center cursor-pointer">
           {images.map((src, index) => (
             <Image
               key={index}
               alt={`Image ${index + 1}`}
               src={src.src}
-              height={320}
-              width={200}
+              height={200}
+              width={100}
               onClick={() => handleClick(index)}
               loading="eager"
             />

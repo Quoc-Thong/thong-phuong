@@ -1,12 +1,26 @@
 "use client";
 import { Button } from "antd";
 import styles from "./styles.module.scss";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { PauseCircleOutlined, PlayCircleOutlined } from "@ant-design/icons";
 
 const Audio = () => {
-  const [play, setPlay] = useState(false);
-  const audioRef: any = useRef(null);
+  const [play, setPlay] = useState(true);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const playAudio = async () => {
+      try {
+        await audioRef.current?.play();
+        setPlay(true);
+      } catch (err) {
+        console.warn("Auto-play was prevented:", err);
+        setPlay(false);
+      }
+    };
+
+    playAudio();
+  }, [play]);
 
   return (
     <div className={styles["audio-sticky"]}>
@@ -15,10 +29,10 @@ const Audio = () => {
         type="text"
         onClick={() => {
           if (play) {
-            audioRef.current.pause();
+            audioRef.current?.pause();
             setPlay(false);
           } else {
-            audioRef.current.play();
+            audioRef.current?.play();
             setPlay(true);
           }
         }}
@@ -37,7 +51,7 @@ const Audio = () => {
         style={{ display: "none" }}
         ref={audioRef}
       >
-        <source src="music.mp3" type="audio/mpeg" />
+        <source id="audio-music" src="piano.mp3" type="audio/mpeg" />
         Your browser does not support the html audio tag.
       </audio>
     </div>

@@ -97,6 +97,7 @@ export const images: CustomImage[] = [
       <div className={classNames(["h-full", styles["hover-img"]])}></div>
     ),
   },
+
   {
     src: "/wedding-picture/DSC00714 re.jpg",
     original: "/wedding-picture/DSC00714 re.jpg",
@@ -124,7 +125,6 @@ export const images: CustomImage[] = [
       <div className={classNames(["h-full", styles["hover-img"]])}></div>
     ),
   },
-
   {
     src: "/wedding-picture/DSC09830 re.jpg",
     original: "/wedding-picture/DSC09830 re.jpg",
@@ -143,68 +143,68 @@ export const images: CustomImage[] = [
       <div className={classNames(["h-full", styles["hover-img"]])}></div>
     ),
   },
-  {
-    src: "/wedding-picture/DSC09667.jpg",
-    original: "/wedding-picture/DSC09667.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
-  {
-    src: "/wedding-picture/DSC00354.jpg",
-    original: "/wedding-picture/DSC00354.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
-  {
-    src: "/wedding-picture/DSC09977.jpg",
-    original: "/wedding-picture/DSC09977.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
+  // {
+  //   src: "/wedding-picture/DSC09667.jpg",
+  //   original: "/wedding-picture/DSC09667.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
+  // {
+  //   src: "/wedding-picture/DSC00354.jpg",
+  //   original: "/wedding-picture/DSC00354.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
+  // {
+  //   src: "/wedding-picture/DSC09977.jpg",
+  //   original: "/wedding-picture/DSC09977.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
 
-  {
-    src: "/wedding-picture/DSC00022.jpg",
-    original: "/wedding-picture/DSC00022.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
-  {
-    src: "/wedding-picture/DSC00064.jpg",
-    original: "/wedding-picture/DSC00064.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
-  {
-    src: "/wedding-picture/DSC00143.jpg",
-    original: "/wedding-picture/DSC00143.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
-  {
-    src: "/wedding-picture/DSC00148.jpg",
-    original: "/wedding-picture/DSC00148.jpg",
-    width: 320,
-    height: 200,
-    customOverlay: (
-      <div className={classNames(["h-full", styles["hover-img"]])}></div>
-    ),
-  },
+  // {
+  //   src: "/wedding-picture/DSC00022.jpg",
+  //   original: "/wedding-picture/DSC00022.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
+  // {
+  //   src: "/wedding-picture/DSC00064.jpg",
+  //   original: "/wedding-picture/DSC00064.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
+  // {
+  //   src: "/wedding-picture/DSC00143.jpg",
+  //   original: "/wedding-picture/DSC00143.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
+  // {
+  //   src: "/wedding-picture/DSC00148.jpg",
+  //   original: "/wedding-picture/DSC00148.jpg",
+  //   width: 320,
+  //   height: 200,
+  //   customOverlay: (
+  //     <div className={classNames(["h-full", styles["hover-img"]])}></div>
+  //   ),
+  // },
 ];
