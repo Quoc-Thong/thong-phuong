@@ -55,7 +55,7 @@ const Event = () => {
             <p className={styles["section-title"]}>Lễ cưới tại nhà thờ</p>
             <div className={styles["date-time"]}>
               <FontAwesomeIcon icon={faCalendar} className="pr-2" />
-              <span>2-11-2024</span>,{" "}
+              <span>3-11-2024</span>,{" "}
               <FontAwesomeIcon icon={faClock} className="pr-2" />
               10:00 a.m. - 10:30 a.m.
             </div>
@@ -87,13 +87,13 @@ const Event = () => {
           ])}
         >
           <div className={styles["frame-img"]}>
-            {/* <Image
-              // src={"/event/cuoi-nha-gai.jpg"}
+            <Image
+              src={"/event/gia-tien-nha-gai.jpg"}
               width={300}
               height={300}
               alt="hinh-cong"
               loading="lazy"
-            /> */}
+            />
           </div>
           <div className={classNames([styles["event-section"]])}>
             <p className={styles["section-title"]}>Lễ cưới tại nhà gái</p>
@@ -127,13 +127,13 @@ const Event = () => {
       >
         <div className={styles["event-wrapper"]}>
           <div className={styles["frame-img"]}>
-            {/* <Image
-              // src={"/event/cuoi-nha-trai.jpg"}
+            <Image
+              src={"/event/gia-tien-nha-trai.jpg"}
               width={300}
               height={300}
               alt="hinh-cong"
               loading="lazy"
-            /> */}
+            />
           </div>
           <div className={classNames([styles["event-section"]])}>
             <p className={styles["section-title"]}>Lễ cưới tại nhà trai</p>

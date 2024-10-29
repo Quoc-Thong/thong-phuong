@@ -45,7 +45,7 @@ const WeddingImages = () => {
               height={320}
               width={200}
               onClick={() => handleClick(index)}
-              loading="lazy"
+              loading="eager"
             />
           ))}
         </div>

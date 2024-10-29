@@ -1,13 +1,11 @@
 "use client";
 import {
-  EngagementParty,
   Introduction,
   LoveStory,
   Event,
   Donating,
   ThankYou,
   Audio,
-  MoreInfo,
 } from "@/components/wedding/";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
@@ -67,11 +65,7 @@ export default function Home() {
         <Donating />
         <ThankYou />
         <HeartFallDown />
-        {/*  */}
-        {/* <MoreInfo /> */}
-        {/* <TravelLocation /> */}
-
-        {/* <Audio /> */}
+        <Audio />
       </MotionConfig>
     </div>
   );
