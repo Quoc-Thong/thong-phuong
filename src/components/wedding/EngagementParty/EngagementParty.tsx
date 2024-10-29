@@ -8,6 +8,7 @@ import { CustomImage, images } from "./images";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { GreenLightWeight } from "@/icons/GreenLightweight";
+import Image from "next/image";
 
 const EngagementParty = () => {
   const [index, setIndex] = useState(-1);
@@ -18,7 +19,7 @@ const EngagementParty = () => {
   const prevIndex = (index + images.length - 1) % images.length;
   const prevImage = images[prevIndex] || currentImage;
 
-  const handleClick = (index: number, item: CustomImage) => setIndex(index);
+  const handleClick = (index: number, item?: CustomImage) => setIndex(index);
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
@@ -55,11 +56,24 @@ const EngagementParty = () => {
             duration: 2,
           }}
         >
-          <Gallery
+          <div className="flex gap-4 flex-wrap justify-center cursor-pointer">
+            {images.map((src, index) => (
+              <Image
+                key={index}
+                alt={`Image ${index + 1}`}
+                src={src.src}
+                height={200}
+                width={100}
+                onClick={() => handleClick(index)}
+                loading="lazy"
+              />
+            ))}
+          </div>
+          {/* <Gallery
             images={images}
             onClick={handleClick}
             enableImageSelection={false}
-          />
+          /> */}
           {!!currentImage && (
             /* @ts-ignore */
             <Lightbox
