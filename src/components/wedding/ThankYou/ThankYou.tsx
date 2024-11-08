@@ -13,12 +13,16 @@ function MyTimer({ expiryTimestamp }: any) {
   });
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const distance = expiryTimestamp - now;
 
       if (distance <= 0) {
-        clearInterval(interval);
+        clearInterval?.(interval);
         console.warn("onExpire called");
         return { days: 0, hours: 0, minutes: 0, seconds: 0 };
       }
@@ -35,11 +39,7 @@ function MyTimer({ expiryTimestamp }: any) {
 
     setTimeLeft(calculateTimeLeft());
 
-    const interval = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(interval);
+    return () => clearInterval?.(interval);
   }, [expiryTimestamp]);
 
   return (
